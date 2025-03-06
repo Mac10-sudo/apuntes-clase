@@ -1,0 +1,32 @@
+#+INCLUDE: ../../som-template.org
+#+TITLE: Práctica sobre Admin. básica de /Windows/ 10 (Parte I)
+#+STARTUP: overview
+
+\blankpage
+
+* Caso práctico I - inicio de sistema
+1. Accede a la máquina virtual en la que instalaste Windows 10. Captura la forma en la que te pide que inicies sesión
+
+* Caso práctico II - configuraciones iniciales 
+1. Accede al nombre del equipo y cámbialo para que se llame:
+   - W10-XX, siendo XX el número de puesto de tu equipo
+2. Accede al panel de control, Sistema, Administrador de dispositivos, ¿están instalados todos los controladores del equipo? ¿Cómo lo sabes?
+3. Selecciona las propiedades de un dispositivo y comprueba su configuración de controlador
+4. Indica varias formas de acceder a la configuración de la tarjeta de red del equipo
+5. Comprueba la configuración por defecto de la red y de la tarjeta de red del equipo.
+   - La red debe ser de Trabajo o Privada, la configuración de tarjeta de red por DHCP, si no es así, cámbialo
+6. Accede a Windows /Update/
+   - Comprueba la configuración
+   - ¿Qué opciones hay?
+7. ¿Se ha instalado algún antivirus por defecto?
+
+* Caso práctico III - atajos y características gráficas
+1. Prueba y explica lo que hacen los siguientes atajos:
+   - =Win+E=
+   - =Win+F=
+   - =Win+D=
+   - =Win+L=
+   - =Win+R=
+   - =Win+TAB=
+   - =Win+Flechas=
+2. ¿Conoces y utilizas alguno más? ¿Cuál?

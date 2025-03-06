@@ -16,7 +16,7 @@
 #+LaTeX_HEADER: \usepackage{fancyhdr}
 #+LaTeX_HEADER: \pagestyle{fancy}
 #+LaTeX_HEADER: \fancyhf[L]{Sistemas Operativos en Red}
-#+LaTeX_HEADER: \fancyhf[R]{Tema 01}
+#+LaTeX_HEADER: \fancyhf[R]{Examen controlador de dominio de Windows}
 #+LaTeX_HEADER: \fancyfoot[R]{ismael.macareno@educa.madrid.org}
 #+LaTeX_HEADER: \fancyfoot[L]{CC BY-NC-SA 4.0}
 #+LATEX_HEADER: \usepackage{parskip}

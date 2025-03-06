@@ -1,0 +1,93 @@
+#+INCLUDE: ../../../smr-template.org
+#+TITLE: Examen Controlador de dominio de Windows
+#+STARTUP: overview
+#+OPTIONS: toc:nil
+
+* Ejercicio 1
+*Previo:* configurar en tarjeta de red, el DNS la propia IP de Windows 2019.
+
+Promocionar a controlador de dominio Windows Server 2019:
+- En vuestro caso, va a ser el único dominio que vamos a crear en vuestra organización, le llamáis *Empresa_INICIALESVUESTRAS.es*
+- Crear con nivel funcional 2016
+- Configurar como contraseña de restauración "Rescate123"
+- Una vez instalado, reiniciamos
+
+
+* Ejercicio 2
+1. Añadir dos máquinas, cliente1 y cliente2 al dominio
+2. Inicia sesión en cliente1 con el usuario administrador del dominio
+3. Inicia sesión en cliente2 con el usuario local empleado. Crea una carpeta en el Escritorio. Cierra la sesión
+4. Vuelve a iniciar sesión en cliente2 con el usuario global empleado. Crea una carpeta en el Escritorio. Cierra la sesión
+5. Ahora, desde el cliente2 con el usuario local supervisor, ve a la carpeta de usuarios y visualiza las distintas carpetas de usuarios existentes. ¿Cómo se diferencian las carpetas
+   de los usuarios locales con los globales?
+
+
+* Ejercicio 3
+1. Crea dos cuentas globales, pedro y ana.
+2. Pulsa sobre propiedades del usuario, y observa las diferentes características que se pueden indicar en un usuario, en especial los atributos que se especifican en la solapa *Cuenta*.
+   - Pon una limitación horaria, de forma que no se pueda acceder en la hora actual
+   - Deshabilita la cuenta
+   - Pon una limitación de acceso, de manera que solo se pueda acceder desde la máquina cliente1
+
+
+* Ejercicio 4
+1. Comprobar que en búsqueda directa aparecen vuestros equipos
+   - ¿Funciona =nslookup= tanto por nombre como por dirección IP?
+2. Crea la zona de búsqueda inversa
+3. Añadir los punteros =PTR= de los equipos
+4. Marcar actualizar punteros =PTR=
+5. Repetir =nslookup= por dirección IP. ¿Funciona?
+
+
+* Ejercicio 5
+1. Crear dos =OU=[fn:1], una madrid y otra sevilla.
+2. Crear dentro de la =OU= madrid otra =OU= llamada Electricista
+3. Mover el equipo cliente1 a la =OU= electricista
+4. Mover el equipo cliente2 a la =OU= sevilla
+5. Crear un usuario dentro de la =OU= Electricista llamado electrico
+6. Crear un usuario dentro de la =OU= sevilla llamado sevillano
+7. Crear una =OU= llamada equipos reales y meter en esta a los equipos cliente1 y cliente2
+
+
+* Ejercicio 6
+1. Publicar los recursos compartidos en cliente1 (=rw=) dentro de la =OU= equiposReales
+2. Crear en el controlador de dominio la carpeta carpeta1 en =C:\=
+3. Compartir carpeta1 con permisos de lectura a usuarios del dominio
+4. Publicar carpeta1 en la =OU= equiposReales
+5. Iniciar sesión en cliente2 en el dominio como empleado y busca los recursos compartidos por el dominio
+6. Buscar desde cliente2 los equipos del dominio
+7. Comprueba que entras a carpeta1 con los permisos configurados
+8. Comprobar que entras a los recursos lectura y escritura
+9. Reiniciar sesión en cliente2 como usuario local empleado
+10. ¿Puedes buscar los recursos compartidos del dominio? ¿Por qué?
+11. ¿Puede entrar al recurso lectura de cliente1?
+
+
+* Ejercicio 7
+*Previo al ejercicio, mover los usuarios pedro y empleado a la =OU= equiposReales*
+1. Establecer un fondo de escritorio obligatorio para la =OU= equiposreales
+   - Inicia sesión en los distintos clientes y comprueba que se ha establecido el fondo escritorio
+
+
+* Ejercicio 8
+1. Establecer política para instalar Firefox a los miembros de una =OU= en configuración de usuario
+   - Comprueba que se puede instalar el /software/
+
+
+* Ejercicio 9
+1. Redireccionar documentos, el objetivo, es que independientemente de donde inicie sesión el usuario, la carpeta Documentos de todos los usuarios de la =OU= se encuentre en el
+   servidor en =C:\DocumentosUsuarios=
+
+
+* Ejercicio 10
+1. Impedir el acceso de usuarios distintos a los que están en equiposReales que inicien sesión en cliente1 y cliente2
+
+
+* Ejercicio 11
+1. A partir de que creamos el dominio, los usuarios normales no pueden entrar en equipo controlador de dominio. Esto se realiza por seguridad del propio controlador de dominio.
+   Este comportamiento está definido por la política por defecto del dominio.
+   - https://blog.soporteti.net/como-permitir-el-inicio-de-sesion-local-en-windows-server-2008-como-controlador-de-dominio/
+
+* Footnotes
+
+[fn:1] /Organizational unit/ 

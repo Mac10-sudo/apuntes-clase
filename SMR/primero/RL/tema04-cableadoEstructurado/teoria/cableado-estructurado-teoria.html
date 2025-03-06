@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Tema 04 - Cableado Estructurado</title>
+<meta name="author" content="Ismael Macareno Chouikh"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Tema 04 - Cableado Estructurado</h1><p class="subtitle"></p>
+<h2 class="author">Ismael Macareno Chouikh</h2><p class="date">Created: 2025-03-06 Thu 18:44</p>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>&Iacute;ndice</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-orgdd8a9a6">1. Definiciones de cableado estructurado</a>
+<ul>
+<li><a href="#/slide-org1fb4380">1.1. Definición I</a></li>
+<li><a href="#/slide-org0399c25">1.2. Definición II</a></li>
+<li><a href="#/slide-org3c1e0b8">1.3. Definición III</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org99ddb24">2. Características</a></li>
+<li><a href="#/slide-org328ec74">3. Normativa</a>
+<ul>
+<li><a href="#/slide-orgd7916a3">3.1. Estándar ANSI/TIA/EIA-568-A</a></li>
+<li><a href="#/slide-org92e9754">3.2. Complemento de la norma 568-A en aspectos de cableado</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org1c3debf">4. Ventajas</a></li>
+<li><a href="#/slide-org1b15921">5. Subsistemas</a></li>
+<li><a href="#/slide-org9436099">6. Ejemplo práctico</a></li>
+<li><a href="#/slide-org99b7296">7. Subsistemas troncal y horizontal</a>
+<ul>
+<li><a href="#/slide-org5050526">7.1. Subsistema troncal o <i>backbone</i></a></li>
+<li><a href="#/slide-org66fbbc3">7.2. Subsistema horizontal</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org16bdda7">8. Subsistemas administrativo y de trabajo</a>
+<ul>
+<li><a href="#/slide-orgb495890">8.1. Subsistema administrativo</a></li>
+<li><a href="#/slide-org546ab69">8.2. Subsistema o área de trabajo</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org79e7227">9. Otros elementos</a>
+<ul>
+<li><a href="#/slide-org977b38f">9.1. Instalación de entrada o acometida</a></li>
+<li><a href="#/slide-orgc8e43b4">9.2. Sala de equipos</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orgde33cde">10. Elementos del cableado estructurado</a>
+<ul>
+<li><a href="#/slide-org6dccdae">10.1. Cables</a></li>
+<li><a href="#/slide-orgf8fcc51">10.2. Conectores - I</a></li>
+<li><a href="#/slide-org7a368c7">10.3. Conectores - II</a></li>
+<li><a href="#/slide-org194ea64">10.4. Rosetas o tomas de usuario</a></li>
+<li><a href="#/slide-org088bcaa">10.5. Paneles de parcheo</a></li>
+<li><a href="#/slide-orgc201d36">10.6. Canaletas y falsos suelos</a></li>
+<li><a href="#/slide-org3e171b3">10.7. Armarios de comunicación</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org6c51bd2">11. Recomendaciones en la instalación</a>
+<ul>
+<li><a href="#/slide-orge33d703">11.1. Subsistema horizontal</a></li>
+<li><a href="#/slide-org77efe4c">11.2. Subsistema vertical</a></li>
+<li><a href="#/slide-org0d4bdd1">11.3. Consideraciones generales</a></li>
+</ul>
+</li>
+<li><a href="#/slide-orge7c7b30">12. Cableado Horizontal</a>
+<ul>
+<li><a href="#/slide-org33b3ef2">12.1. Distancias máximas</a></li>
+<li><a href="#/slide-org1063690">12.2. Limitaciones</a></li>
+</ul>
+</li>
+<li><a href="#/slide-org467a884">13. Comprobación del cableado</a>
+<ul>
+<li><a href="#/slide-org70dc551">13.1. Buenas prácticas</a></li>
+<li><a href="#/slide-org44b0797">13.2. Tareas a realizar</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+
+<section>
+<section id="slide-orgdd8a9a6">
+<h2 id="orgdd8a9a6"><span class="section-number-2">1.</span> Definiciones de cableado estructurado</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org1fb4380">
+<h3 id="org1fb4380"><span class="section-number-3">1.1.</span> Definición I</h3>
+<p>
+El <b>cableado estructurado</b> es la técnica que permite
+</p>
+<ul>
+<li>cambiar</li>
+<li>identificar</li>
+<li>mover</li>
+
+</ul>
+<p>
+periféricos o equipos de una red con flexibilidad y sencillez.
+</p>
+</section>
+<section id="slide-org0399c25">
+<h3 id="org0399c25"><span class="section-number-3">1.2.</span> Definición II</h3>
+<p>
+Sistema colectivo de:
+</p>
+<ul>
+<li>cables</li>
+<li>canalizaciones</li>
+<li>conectores</li>
+<li>etiquetas</li>
+<li>espacios</li>
+
+</ul>
+<p>
+y demás dispositivos que deben ser instalados para establecer una infraestructura de telecomunicaciones genérica en un edificio o campus
+</p>
+</section>
+<section id="slide-org3c1e0b8">
+<h3 id="org3c1e0b8"><span class="section-number-3">1.3.</span> Definición III</h3>
+<p>
+Distribución de cables en un edificio que comprenda las necesidades de comunicación actuales y futuras.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org99ddb24">
+<h2 id="org99ddb24"><span class="section-number-2">2.</span> Características</h2>
+<ul>
+<li>Toda solución de cableado estructurado debe ser modular.</li>
+<li>Comprende la transmisión de voz y datos</li>
+<li>Los equipos de interconexión de los módulos se sitúan en lugares centralizados, facilitando la detección de problemas de cableado y su solución sin afectar al resto de la red.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org328ec74">
+<h2 id="org328ec74"><span class="section-number-2">3.</span> Normativa</h2>
+<p>
+Las normas más importantes a saber son:
+</p>
+<ul>
+<li>EIA/TIA 568 y otras</li>
+<li>ISO/IEC 11801</li>
+<li>EN 50173</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd7916a3">
+<h3 id="orgd7916a3"><span class="section-number-3">3.1.</span> Estándar ANSI/TIA/EIA-568-A</h3>
+<p>
+Estándar ANSI/TIA/EIA-568-A de Cableado de Telecomunicaciones para Edificios Comerciales. El propósito de esta norma es permitir la planificación e instalación de cableado de edificios
+con muy poco conocimiento de los productos de telecomunicaciones que serán instalados con posterioridad.
+</p>
+
+</section>
+<section id="slide-org92e9754">
+<h3 id="org92e9754"><span class="section-number-3">3.2.</span> Complemento de la norma 568-A en aspectos de cableado</h3>
+<ul>
+<li><b>Estándar ANSI/TIA/EIA-569-A</b>: de Rutas y Espacios de Telecomunicaciones para Edificios Comerciales.</li>
+<li><b>EIA/TIA 570</b>: establece el cableado de uso residencial y de pequeños negocios.</li>
+<li><b>Estándar ANSI/TIA/EIA-606</b>: Administración para la Infraestructura de Telecomunicaciones de Edificios Comerciales.</li>
+<li><b>EIA/TIA 607</b>: define al sistema de tierra física y el de alimentación bajo las cuales se deberán de operar y proteger los elementos del sistema estructurado.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1c3debf">
+<h2 id="org1c3debf"><span class="section-number-2">4.</span> Ventajas</h2>
+<ul>
+<li>independiente de la aplicación y del proveedor</li>
+<li>puede conectarse en cualquier punto del edificio y trabajar del mismo modo</li>
+<li>crecimiento de la red sin añadir excesiva complejidad a la misma</li>
+<li>Los problemas que pudieran surgir quedan aislados en el módulo correspondiente.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org1b15921">
+<h2 id="org1b15921"><span class="section-number-2">5.</span> Subsistemas</h2>
+<ul>
+<li><i>backbone</i> o subsistema troncal</li>
+<li>subsistema horizontal</li>
+<li>subsistema administrativo (conecta el vertical con el horizontal)</li>
+<li>subsistema de puesto de trabajo (<i>patch cord</i>)</li>
+<li>subsistema de campus (instalaciones grandes o multi-edificio)</li>
+<li>Otros:
+<ul>
+<li>instalación de entrada</li>
+<li>sala de equipos</li>
+
+</ul></li>
+
+</ul>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org9436099">
+<h2 id="org9436099"><span class="section-number-2">6.</span> Ejemplo práctico</h2>
+
+<div id="org5505601" class="figure">
+<p><img src="./media/ejemplo-cableado1.png" alt="ejemplo-cableado1.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org99b7296">
+<h2 id="org99b7296"><span class="section-number-2">7.</span> Subsistemas troncal y horizontal</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</section>
+<section id="slide-org5050526">
+<h3 id="org5050526"><span class="section-number-3">7.1.</span> Subsistema troncal o <i>backbone</i></h3>
+<ul>
+<li>Proporciona interconexión entre la sala de equipos, subsistemas administrativos e instalaciones de entrada.</li>
+<li>Necesita tener gran ancho de banda
+<ul>
+<li>implica cableado de alta velocidad</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org66fbbc3">
+<h3 id="org66fbbc3"><span class="section-number-3">7.2.</span> Subsistema horizontal</h3>
+<ul>
+<li>Cableado e interconexión entre elsubsistema administrativo y el área de trabajo.</li>
+<li>Necesita menor ancho de banda que el vertical.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org16bdda7">
+<h2 id="org16bdda7"><span class="section-number-2">8.</span> Subsistemas administrativo y de trabajo</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+</section>
+<section id="slide-orgb495890">
+<h3 id="orgb495890"><span class="section-number-3">8.1.</span> Subsistema administrativo</h3>
+<ul>
+<li>Conexiones entre subsistemas vertical y horizontal</li>
+<li>Compatibiliza la transmisión vertical y la horizontal en caso de que se necesite</li>
+
+</ul>
+</section>
+<section id="slide-org546ab69">
+<h3 id="org546ab69"><span class="section-number-3">8.2.</span> Subsistema o área de trabajo</h3>
+<ul>
+<li>Conecta el horizontal con el equipo de usuario</li>
+<li>Roseta y cable directo al PC y/o teléfono</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org79e7227">
+<h2 id="org79e7227"><span class="section-number-2">9.</span> Otros elementos</h2>
+<div class="outline-text-2" id="text-9">
+</div>
+</section>
+<section id="slide-org977b38f">
+<h3 id="org977b38f"><span class="section-number-3">9.1.</span> Instalación de entrada o acometida</h3>
+<ul>
+<li>Es el punto donde la instalación exterior se conecta al edificio.</li>
+<li>Este punto puede estar utilizado por servicios de redes públicas, redes privadas del cliente, o ambas.</li>
+<li>Separa ámbitos público y privado.</li>
+
+</ul>
+</section>
+<section id="slide-orgc8e43b4">
+<h3 id="orgc8e43b4"><span class="section-number-3">9.2.</span> Sala de equipos</h3>
+<ul>
+<li>Espacio centralizado para todo tipo de servidores y equipos de comunicaciones comunes a todo el edificio.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgde33cde">
+<h2 id="orgde33cde"><span class="section-number-2">10.</span> Elementos del cableado estructurado</h2>
+<div class="outline-text-2" id="text-10">
+</div>
+</section>
+<section id="slide-org6dccdae">
+<h3 id="org6dccdae"><span class="section-number-3">10.1.</span> Cables</h3>
+<ul>
+<li>UTP para el subsistema horizontal y <i>patch cords</i>.</li>
+<li>Fibra, coaxial o UTP/STP de alta velocidad para el subsistema vertical.</li>
+
+</ul>
+</section>
+<section id="slide-orgf8fcc51">
+<h3 id="orgf8fcc51"><span class="section-number-3">10.2.</span> Conectores - I</h3>
+<ul>
+<li>RJ45 para datos</li>
+
+</ul>
+
+<div id="orgf6e8800" class="figure">
+<p><img src="./media/RJ45-Pinout.png" alt="RJ45-Pinout.png" />
+</p>
+</div>
+</section>
+<section id="slide-org7a368c7">
+<h3 id="org7a368c7"><span class="section-number-3">10.3.</span> Conectores - II</h3>
+<ul>
+<li>RJ11 para voz</li>
+
+</ul>
+
+<div id="orgdc5b291" class="figure">
+<p><img src="./media/cable-de-telefono-rj11-6p4c-m-m-3-m-blanco.png" alt="cable-de-telefono-rj11-6p4c-m-m-3-m-blanco.png" />
+</p>
+</div>
+</section>
+<section id="slide-org194ea64">
+<h3 id="org194ea64"><span class="section-number-3">10.4.</span> Rosetas o tomas de usuario</h3>
+<ul>
+<li>Elementos donde se conectan los <i>patch cord</i> de las áreas de usuario</li>
+
+</ul>
+
+<div id="org3829321" class="figure">
+<p><img src="./media/ethernet_es-roseta-vacia.png" alt="ethernet_es-roseta-vacia.png" />
+</p>
+</div>
+</section>
+<section id="slide-org088bcaa">
+<h3 id="org088bcaa"><span class="section-number-3">10.5.</span> Paneles de parcheo</h3>
+<ul>
+<li>Elementos de terminación de una conexión. Facilitan conectar, interconectar y reconectar elementos en la red. Se instalan en los <i>racks</i>.</li>
+
+</ul>
+
+<div id="orge9b0b90" class="figure">
+<p><img src="./media/667233583716241408.png" alt="667233583716241408.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgc201d36">
+<h3 id="orgc201d36"><span class="section-number-3">10.6.</span> Canaletas y falsos suelos</h3>
+<ul>
+<li>Para ocultar el cableado</li>
+
+</ul>
+
+<div id="orga64cdd8" class="figure">
+<p><img src="./media/canaleta-falsoSuelo.png" alt="canaleta-falsoSuelo.png" />
+</p>
+</div>
+</section>
+<section id="slide-org3e171b3">
+<h3 id="org3e171b3"><span class="section-number-3">10.7.</span> Armarios de comunicación</h3>
+<ul>
+<li>Albergan paneles de parcheo, <i>switches</i>, <i>hubs</i> y el cableado de interconexión.</li>
+
+</ul>
+
+<div id="orgd102bed" class="figure">
+<p><img src="./media/COMPUTERS-AND-NETWORKS-Rack-diagrams-Typical-Server-Rack-Diagram.png" alt="COMPUTERS-AND-NETWORKS-Rack-diagrams-Typical-Server-Rack-Diagram.png" />
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org6c51bd2">
+<h2 id="org6c51bd2"><span class="section-number-2">11.</span> Recomendaciones en la instalación</h2>
+<div class="outline-text-2" id="text-11">
+</div>
+</section>
+<section id="slide-orge33d703">
+<h3 id="orge33d703"><span class="section-number-3">11.1.</span> Subsistema horizontal</h3>
+<ul>
+<li>Definir previamente la cantidad de puestos por planta.
+<ul>
+<li>Calcular 1 puesto de trabajo por cada 10m2 aproximadamente</li>
+
+</ul></li>
+<li>Definir cuántas conexiones RJ45 y RJ11 se necesitan por puesto de trabajo
+<ul>
+<li>Normalmente por puesto 2, una para datos y otra para voz</li>
+
+</ul></li>
+<li>Definir tipos de canalizaciones y rosetas que se requieren</li>
+<li>Definir la mejor ubicación de los armarios</li>
+<li>Definir la cantidad de cable que se necesita, sabiendo las limitaciones de longitud especificadas para ese cable</li>
+<li>Prever un 15 o 20% de conexiones libres</li>
+
+</ul>
+</section>
+<section id="slide-org77efe4c">
+<h3 id="org77efe4c"><span class="section-number-3">11.2.</span> Subsistema vertical</h3>
+<ul>
+<li>Definir los servicios que tiene que soportar la red (voz, datos, video, etc.)</li>
+<li>Definir el tipo de cable capaz de soportar el tráfico.</li>
+<li>Definir el modo de conexión entre subsistemas.</li>
+<li>Elegir entre cuarto de comunicaciones o armario.</li>
+
+</ul>
+</section>
+<section id="slide-org0d4bdd1">
+<h3 id="org0d4bdd1"><span class="section-number-3">11.3.</span> Consideraciones generales</h3>
+<ul>
+<li>La instalación debe quedar documentada</li>
+<li>Los cables deben ir etiquetados</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge7c7b30">
+<h2 id="orge7c7b30"><span class="section-number-2">12.</span> Cableado Horizontal</h2>
+<div class="outline-text-2" id="text-12">
+</div>
+</section>
+<section id="slide-org33b3ef2">
+<h3 id="org33b3ef2"><span class="section-number-3">12.1.</span> Distancias máximas</h3>
+
+<div id="org067fc3d" class="figure">
+<p><img src="./media/distancias-maximas.png" alt="distancias-maximas.png" />
+</p>
+</div>
+</section>
+<section id="slide-org1063690">
+<h3 id="org1063690"><span class="section-number-3">12.2.</span> Limitaciones</h3>
+<p>
+Evitar el paso de los cables de datos a través o cerca de:
+</p>
+<ul>
+<li>Motores eléctricos o transformadores. &gt; 1,2m.</li>
+<li>No compartir conducto con los cables de corriente alterna.</li>
+<li>Fluorescentes a una distancia mínima de 12cm.</li>
+<li>En caso de necesitar cruzar con cables eléctricos o luces fluorescentes, se debe hacer con un ángulo de 90º.</li>
+<li>Equipos de soldadura, aires acondicionados, ventiladores, calentadores eléctricos a 1,2m</li>
+<li>Evitar otras fuentes de radiofrecuencia o eléctricas</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org467a884">
+<h2 id="org467a884"><span class="section-number-2">13.</span> Comprobación del cableado</h2>
+<div class="outline-text-2" id="text-13">
+</div>
+</section>
+<section id="slide-org70dc551">
+<h3 id="org70dc551"><span class="section-number-3">13.1.</span> Buenas prácticas</h3>
+<ul>
+<li>Conviene ejecutar <i>tests</i> conforme se avanza en la instalación.</li>
+<li>Una vez finalizada la instalación, se debe ejecutar una prueba de conformidad o certificación</li>
+
+</ul>
+</section>
+<section id="slide-org44b0797">
+<h3 id="org44b0797"><span class="section-number-3">13.2.</span> Tareas a realizar</h3>
+<ul>
+<li>Verificar continuidad en los cables.</li>
+<li>Verificar la calidad de la transmisión: niveles de diafonía, atenuación y ruido.</li>
+<li>Chequear el mapeado de hilos: comprueba que los hilos que forman el cable estén montados correctamente.</li>
+<li>Medir la resistencia del cable. Un valor alto puede producir problemas de atenuación de la señal</li>
+<li>Longitud: distancia entre los dos extremos del cable. Tienen que respetar las distancias máximas definida por el estándar.</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

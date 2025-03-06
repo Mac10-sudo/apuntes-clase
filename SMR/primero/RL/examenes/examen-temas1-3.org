@@ -1,0 +1,497 @@
+#+INCLUDE: ../rl-template.org
+
+¿Cuál de las siguientes opciones describe mejor una arquitectura de red?
+
+- Conjunto de dispositivos de almacenamiento
+
+- Plan que establece mecanismos para la comunicación entre dispositivos
+
+- Red de área local restringida
+
+- Sistema de virtualización para servidores
+
+Una arquitectura monolítica en redes:
+
+- Era compatible con todas las empresas
+
+- Dividía las funciones en varias capas
+
+- Abordaba todos los aspectos al mismo tiempo
+
+- Se enfocaba solo en redes inalámbricas
+
+El modelo OSI se compone de:
+
+- 5 capas
+
+- 7 capas
+
+- 4 capas
+
+- 8 capas
+
+La capa física del modelo OSI se encarga de:
+
+- El direccionamiento IP
+
+- El transporte de datos entre redes
+
+- La codificación de información a señales utilizables en el canal
+
+- La gestión de errores
+
+El protocolo TCP es:
+
+- No orientado a conexión
+
+- Orientado a conexión
+
+- Exclusivo para redes inalámbricas
+
+- Usado solo para broadcast
+
+La función principal de la capa de enlace es:
+
+- Definir el mejor camino para la transmisión de datos
+
+- Garantizar una comunicación libre de errores entre dispositivos directamente conectados
+
+- Proporcionar servicios de cifrado
+
+- Gestionar el direccionamiento IP
+
+¿Cuál es la unidad de datos (PDU) de la capa de red?
+
+- Trama
+
+- Paquete
+
+- Segmento
+
+- Bits
+
+El protocolo IP se encarga de:
+
+- Gestión de sesiones Cifrado de datos
+
+- Encaminamiento de paquetes
+
+- Sincronización de dispositivos
+
+Una red PAN está diseñada para:
+
+- Conectar dispositivos a nivel personal
+
+- Conectar dispositivos a través de ciudades
+
+- Interconectar continentes Transmitir datos entre varios edificios
+
+En una topología en estrella:
+
+- Todos los nodos están conectados en un lazo cerrado
+
+- Si falla el nodo central, la red cae
+
+- Los datos circulan sin nodo central
+
+- No hay colisiones posibles
+
+La transmisión en modo simplex se caracteriza por:
+- Comunicación simultánea en ambos sentidos
+
+- Comunicación en ambos sentidos pero alternada
+
+- Comunicación en un solo sentido
+
+- Transmisión mediante señales cifradas
+
+En una red punto a punto:
+
+- Todos los nodos comparten el mismo canal
+
+- Se establece una conexión dedicada entre dos nodos
+
+- La información se transmite mediante token
+
+- Los paquetes no requieren direcciones
+
+El encaminamiento consiste en:
+
+- Determinar la mejor ruta para transmitir datos
+
+- Dividir los datos en tramas
+
+- Gestión de errores en la capa de enlace
+
+- Configurar el hardware de red
+
+La multiplexación permite:
+
+- Reducir errores de transmisión
+
+- Dividir una red en varias subredes
+
+- Compartir un canal para múltiples comunicaciones
+
+- Conectar dispositivos inalámbricos
+
+La función de un switch en una red es:
+
+- Repetir señales a todos los puertos
+
+- Encaminamiento entre redes
+
+- Conectar nodos y redirigir tramas al destino correcto
+
+- Manejar conexiones VPN
+
+El protocolo DNS se utiliza para:
+
+- Transferencia de archivos
+
+- Resolución de nombres de dominio
+
+- Cifrado de datos
+
+- Gestión de direcciones IP
+
+La ventaja principal de una red privada es:
+
+- Bajo coste
+
+- Alta disponibilidad pública
+
+- Diseño a medida y control total
+
+- Bajo mantenimiento
+
+Una red MAN suele abarcar:
+
+- Un edificio
+
+- Una región o conjunto de edificios
+
+- Varias ciudades
+
+- Dispositivos personales
+
+El protocolo UDP:
+
+- Garantiza la entrega de datos
+
+- Es orientado a conexión
+
+- No garantiza la entrega de datos
+
+- Siempre cifra la información
+
+La capa de presentación del modelo OSI se encarga de:
+
+- Encaminamiento de paquetes
+
+- Compresión y cifrado de información
+
+- Establecer la conexión física
+
+- Gestionar el acceso al medio
+
+Un ejemplo de protocolo en la capa de aplicación es:
+
+- IP
+
+- FTP
+
+- TCP
+
+- Ethernet
+
+El modelo TCP/IP tiene:
+
+- Tres capas
+
+- Cuatro capas
+
+- Cinco capas
+
+- Siete capas
+
+La capa de transporte en TCP/IP se encarga de:
+
+- Direccionamiento lógico
+
+- Encaminamiento
+
+- Gestión de la conexión extremo a extremo
+
+- Gestión de direcciones físicas
+
+En una topología de bus:
+
+- Los nodos se conectan mediante un nodo central
+
+- Los nodos se conectan en serie formando un anillo
+
+- Los nodos comparten un único cable
+
+- La información siempre viaja en paralelo
+
+La función principal de un router es:
+
+- Repetir señales
+
+- Encaminamiento de paquetes entre redes
+
+- Almacenar datos temporalmente
+
+- Gestionar el acceso al medio
+
+En una conexión half-duplex:
+
+- La comunicación es en un solo sentido
+
+- La comunicación es simultánea en ambos sentidos
+
+- La comunicación es alternada entre ambos nodos
+
+- Solo se transmiten datos cifrados
+
+El control de flujo se refiere a:
+
+- La gestión del direccionamiento IP
+
+- La regulación de la velocidad de transmisión entre emisor y receptor
+
+- La división de paquetes grandes
+
+- La selección del mejor camino
+
+El sistema DSL permite:
+
+- Comunicaciones por radiofrecuencia
+
+- Alta velocidad en cableado de baja calidad
+
+- Transmisión de datos solo en redes privadas
+
+- Uso exclusivo para voz
+
+Una VPN ofrece:
+
+- Comunicaciones públicas sin seguridad
+
+- Ilusión de una LAN única mediante redes públicas
+
+- Solo conexiones locales
+
+- Comunicación inalámbrica
+
+La multiplexación por división de tiempo:
+
+- Divide el canal en bandas de frecuencia
+
+- Divide el tiempo en ranuras asignadas a cada usuario
+
+- No permite transmisiones simultáneas
+
+- Solo se usa en redes inalámbricas
+
+La PDU de la capa física es:
+
+- Bits
+
+- Trama
+
+- Paquete
+
+- Segmento
+
+Una red RDSI permite:
+
+- Solo transmisión de voz
+
+- Voz y datos multiplexados
+
+- Solo conexiones inalámbricas
+
+- Comunicaciones exclusivas para voz analógica
+
+La codificación Manchester diferencia un bit 0 y 1 mediante:
+
+- Cambio de fase al principio del bit
+
+- Transición a mitad del bit
+
+- Ausencia de transiciones
+
+- Mantenimiento de la polaridad
+
+La multiplexación por división de frecuencia asigna:
+
+- Ranuras de tiempo
+
+- Bandas de frecuencia
+
+- Direcciones IP
+
+- Paquetes segmentados
+
+Un bridge conecta:
+
+- Dos segmentos de red
+
+- Dispositivos inalámbricos
+
+- Servidores web
+
+- Redes internacionales
+
+El ruido en una transmisión es:
+
+- Una deformación predecible
+
+- Interferencia aleatoria y no deseada
+
+- Pérdida de paquetes
+
+- Cambio de fase controlado
+
+El protocolo FTP se utiliza para:
+
+- Transferencia de archivos
+
+- Resolución de nombres
+
+- Gestión de sesiones
+
+- Control de accesos
+
+La transmisión asíncrona requiere:
+
+- Una velocidad constante
+
+- Señales de sincronización incluidas en el mensaje
+
+- Relojes sincronizados
+
+- Cifrado extremo a extremo
+
+Una topología en árbol es una extensión de:
+
+- Bus
+
+- Estrella
+
+- Anillo
+
+- Jerárquica
+
+Un concentrador (hub) en una red:
+
+- Redirige paquetes al destino correcto
+
+- Repite señales a todos los puertos
+
+- Filtra tramas por dirección
+
+- Encapsula datos
+
+La dirección IP pertenece a la capa:
+
+- Física
+
+- Enlace
+
+- Red
+
+- Transporte
+
+La transmisión de voz por corriente eléctrica se realiza en:
+
+- RTC
+
+- VPN
+
+- DSL
+
+- ISDN
+
+La transformada de Fourier permite:
+
+- Reducir el ruido de transmisión
+
+- Identificar las frecuencias componentes de una señal
+
+- Mejorar el ancho de banda
+
+- Optimizar las conexiones
+
+El control de acceso al medio (MA- se encuentra en:
+
+- Capa física
+
+- Subcapa de enlace
+
+- Capa de transporte
+
+- Capa de aplicación
+
+La atenuación en una transmisión provoca:
+
+- Deformación de la señal
+
+- Pérdida de intensidad de la señal
+
+- Interferencia con otras señales
+
+- Mejora en la calidad
+
+La transmisión paralela:
+
+- Envía un bit por vez
+
+- Envía varios bits simultáneamente
+
+- Requiere modems especiales
+
+- Solo se usa en redes inalámbricas
+
+El protocolo Telnet permite:
+
+- Resolución de nombres
+
+- Transferencia de archivos
+
+- Conexión remota
+
+- Control de acceso
+
+Una red WAN abarca:
+
+- Un área local
+
+- Una región pequeña
+
+- Varias ciudades o países
+
+- Solo dispositivos personales
+
+El direccionamiento MAC es:
+
+- Dirección lógica
+
+- Dirección física
+
+- Dirección virtual
+
+- Dirección de transporte
+
+La capa LLC pertenece a:
+
+- Capa física
+
+- Subcapa de enlace
+
+- Capa de red
+
+- Capa de transporte
+

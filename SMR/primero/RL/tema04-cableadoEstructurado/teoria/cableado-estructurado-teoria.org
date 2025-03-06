@@ -1,0 +1,153 @@
+#+INCLUDE: ../../rl-template.org
+#+TITLE: Tema 04 - Cableado Estructurado
+#+STARTUP: overview
+
+\blankpage
+
+* Definiciones de cableado estructurado
+** Definición I
+El *cableado estructurado* es la técnica que permite
+- cambiar
+- identificar
+- mover
+periféricos o equipos de una red con flexibilidad y sencillez.
+** Definición II
+Sistema colectivo de:
+- cables
+- canalizaciones
+- conectores
+- etiquetas
+- espacios
+y demás dispositivos que deben ser instalados para establecer una infraestructura de telecomunicaciones genérica en un edificio o campus
+** Definición III
+Distribución de cables en un edificio que comprenda las necesidades de comunicación actuales y futuras.
+
+* Características
+- Toda solución de cableado estructurado debe ser modular.
+- Comprende la transmisión de voz y datos
+- Los equipos de interconexión de los módulos se sitúan en lugares centralizados, facilitando la detección de problemas de cableado y su solución sin afectar al resto de la red.
+
+* Normativa
+Las normas más importantes a saber son:
+- EIA/TIA 568 y otras
+- ISO/IEC 11801
+- EN 50173
+
+** Estándar ANSI/TIA/EIA-568-A 
+Estándar ANSI/TIA/EIA-568-A de Cableado de Telecomunicaciones para Edificios Comerciales. El propósito de esta norma es permitir la planificación e instalación de cableado de edificios
+con muy poco conocimiento de los productos de telecomunicaciones que serán instalados con posterioridad.
+ 
+** Complemento de la norma 568-A en aspectos de cableado
+- *Estándar ANSI/TIA/EIA-569-A*: de Rutas y Espacios de Telecomunicaciones para Edificios Comerciales.
+- *EIA/TIA 570*: establece el cableado de uso residencial y de pequeños negocios.
+- *Estándar ANSI/TIA/EIA-606*: Administración para la Infraestructura de Telecomunicaciones de Edificios Comerciales.
+- *EIA/TIA 607*: define al sistema de tierra física y el de alimentación bajo las cuales se deberán de operar y proteger los elementos del sistema estructurado.
+  
+* Ventajas
+- independiente de la aplicación y del proveedor
+- puede conectarse en cualquier punto del edificio y trabajar del mismo modo
+- crecimiento de la red sin añadir excesiva complejidad a la misma
+- Los problemas que pudieran surgir quedan aislados en el módulo correspondiente.
+
+* Subsistemas
+- /backbone/ o subsistema troncal
+- subsistema horizontal
+- subsistema administrativo (conecta el vertical con el horizontal)
+- subsistema de puesto de trabajo (/patch cord/)
+- subsistema de campus (instalaciones grandes o multi-edificio)
+- Otros:
+  - instalación de entrada
+  - sala de equipos
+
+
+
+* Ejemplo práctico
+[[./media/ejemplo-cableado1.png]]
+
+* Subsistemas troncal y horizontal
+** Subsistema troncal o /backbone/
+- Proporciona interconexión entre la sala de equipos, subsistemas administrativos e instalaciones de entrada.
+- Necesita tener gran ancho de banda
+  - implica cableado de alta velocidad
+** Subsistema horizontal
+- Cableado e interconexión entre elsubsistema administrativo y el área de trabajo.
+- Necesita menor ancho de banda que el vertical.
+
+* Subsistemas administrativo y de trabajo
+** Subsistema administrativo
+- Conexiones entre subsistemas vertical y horizontal
+- Compatibiliza la transmisión vertical y la horizontal en caso de que se necesite
+** Subsistema o área de trabajo
+- Conecta el horizontal con el equipo de usuario
+- Roseta y cable directo al PC y/o teléfono
+
+* Otros elementos
+** Instalación de entrada o acometida
+- Es el punto donde la instalación exterior se conecta al edificio.
+- Este punto puede estar utilizado por servicios de redes públicas, redes privadas del cliente, o ambas.
+- Separa ámbitos público y privado.
+** Sala de equipos
+- Espacio centralizado para todo tipo de servidores y equipos de comunicaciones comunes a todo el edificio.
+
+* Elementos del cableado estructurado
+** Cables
+- UTP para el subsistema horizontal y /patch cords/.
+- Fibra, coaxial o UTP/STP de alta velocidad para el subsistema vertical.
+** Conectores - I
+- RJ45 para datos
+[[./media/RJ45-Pinout.png]]
+** Conectores - II
+- RJ11 para voz
+[[./media/cable-de-telefono-rj11-6p4c-m-m-3-m-blanco.png]]
+** Rosetas o tomas de usuario
+- Elementos donde se conectan los /patch cord/ de las áreas de usuario
+[[./media/ethernet_es-roseta-vacia.png]]
+** Paneles de parcheo
+- Elementos de terminación de una conexión. Facilitan conectar, interconectar y reconectar elementos en la red. Se instalan en los /racks/.
+[[./media/667233583716241408.png]]
+** Canaletas y falsos suelos
+- Para ocultar el cableado
+[[./media/canaleta-falsoSuelo.png]]
+** Armarios de comunicación
+- Albergan paneles de parcheo, /switches/, /hubs/ y el cableado de interconexión.
+[[./media/COMPUTERS-AND-NETWORKS-Rack-diagrams-Typical-Server-Rack-Diagram.png]]
+
+* Recomendaciones en la instalación
+** Subsistema horizontal
+- Definir previamente la cantidad de puestos por planta.
+  - Calcular 1 puesto de trabajo por cada 10m2 aproximadamente
+- Definir cuántas conexiones RJ45 y RJ11 se necesitan por puesto de trabajo
+  - Normalmente por puesto 2, una para datos y otra para voz
+- Definir tipos de canalizaciones y rosetas que se requieren
+- Definir la mejor ubicación de los armarios
+- Definir la cantidad de cable que se necesita, sabiendo las limitaciones de longitud especificadas para ese cable
+- Prever un 15 o 20% de conexiones libres
+** Subsistema vertical
+- Definir los servicios que tiene que soportar la red (voz, datos, video, etc.)
+- Definir el tipo de cable capaz de soportar el tráfico.
+- Definir el modo de conexión entre subsistemas.
+- Elegir entre cuarto de comunicaciones o armario.
+** Consideraciones generales
+- La instalación debe quedar documentada
+- Los cables deben ir etiquetados
+* Cableado Horizontal
+** Distancias máximas
+[[./media/distancias-maximas.png]]
+** Limitaciones
+Evitar el paso de los cables de datos a través o cerca de:
+- Motores eléctricos o transformadores. > 1,2m.
+- No compartir conducto con los cables de corriente alterna.
+- Fluorescentes a una distancia mínima de 12cm.
+- En caso de necesitar cruzar con cables eléctricos o luces fluorescentes, se debe hacer con un ángulo de 90º.
+- Equipos de soldadura, aires acondicionados, ventiladores, calentadores eléctricos a 1,2m
+- Evitar otras fuentes de radiofrecuencia o eléctricas
+* Comprobación del cableado
+** Buenas prácticas
+- Conviene ejecutar /tests/ conforme se avanza en la instalación.
+- Una vez finalizada la instalación, se debe ejecutar una prueba de conformidad o certificación
+** Tareas a realizar
+- Verificar continuidad en los cables.
+- Verificar la calidad de la transmisión: niveles de diafonía, atenuación y ruido.
+- Chequear el mapeado de hilos: comprueba que los hilos que forman el cable estén montados correctamente.
+- Medir la resistencia del cable. Un valor alto puede producir problemas de atenuación de la señal
+- Longitud: distancia entre los dos extremos del cable. Tienen que respetar las distancias máximas definida por el estándar.

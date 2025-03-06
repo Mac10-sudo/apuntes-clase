@@ -1,0 +1,202 @@
+% Created 2025-02-11 Tue 18:06
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage[margin=0.5in]{geometry}
+\hypersetup{colorlinks, linkcolor=black}
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf[L]{Sistemas Operativos en Red}
+\fancyhf[R]{Examen controlador de dominio de Windows}
+\fancyfoot[R]{ismael.macareno@educa.madrid.org}
+\fancyfoot[L]{CC BY-NC-SA 4.0}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{220,220,220}
+\newenvironment{shadedcode}{%
+\VerbatimEnvironment
+\begin{mdframed}[backgroundcolor=shadecolor,linewidth=0pt]}%
+{\end{mdframed}}
+\usepackage{attachfile2}
+\newcommand{\textattachfilecolor}[2]{\textattachfile[color=0 0 0.5]{#1}{\textcolor{blue}{#2}}}
+\usepackage[spanish]{babel}
+\usepackage{datetime2}
+\DTMlangsetup[es-ES]{ord=raise}
+\renewcommand{\dateseparator}{/}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\newcommand\blankpage{\null\thispagestyle{empty}\newpage}
+\usepackage{colortbl}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage[spanish]{babel}
+\lstset{
+inputencoding=utf8,
+extendedchars=true,
+literate={ñ}{{\~n}}1 {Ñ}{{\~N}}1 {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1,
+basicstyle=\ttfamily,
+breaklines=true,
+columns=fullflexible,
+keepspaces=true,
+language=TeX,
+morekeywords={*, -, **, /}
+}
+\author{Ismael Macareno Chouikh}
+\date{\today}
+\title{Examen Controlador de dominio de Windows}
+\hypersetup{
+ pdfauthor={Ismael Macareno Chouikh},
+ pdftitle={Examen Controlador de dominio de Windows},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+
+\section{Ejercicio 1}
+\label{sec:org68734ab}
+\textbf{Previo:} configurar en tarjeta de red, el DNS la propia IP de Windows 2019.
+
+Promocionar a controlador de dominio Windows Server 2019:
+\begin{itemize}
+\item En vuestro caso, va a ser el único dominio que vamos a crear en vuestra organización, le llamáis \textbf{Empresa\textsubscript{INICIALESVUESTRAS.es}}
+\item Crear con nivel funcional 2016
+\item Configurar como contraseña de restauración "Rescate123"
+\item Una vez instalado, reiniciamos
+\end{itemize}
+
+
+\section{Ejercicio 2}
+\label{sec:org2b82291}
+\begin{enumerate}
+\item Añadir dos máquinas, cliente1 y cliente2 al dominio
+\item Inicia sesión en cliente1 con el usuario administrador del dominio
+\item Inicia sesión en cliente2 con el usuario local empleado. Crea una carpeta en el Escritorio. Cierra la sesión
+\item Vuelve a iniciar sesión en cliente2 con el usuario global empleado. Crea una carpeta en el Escritorio. Cierra la sesión
+\item Ahora, desde el cliente2 con el usuario local supervisor, ve a la carpeta de usuarios y visualiza las distintas carpetas de usuarios existentes. ¿Cómo se diferencian las carpetas
+de los usuarios locales con los globales?
+\end{enumerate}
+
+
+\section{Ejercicio 3}
+\label{sec:orgdc92c6a}
+\begin{enumerate}
+\item Crea dos cuentas globales, pedro y ana.
+\item Pulsa sobre propiedades del usuario, y observa las diferentes características que se pueden indicar en un usuario, en especial los atributos que se especifican en la solapa \textbf{Cuenta}.
+\begin{itemize}
+\item Pon una limitación horaria, de forma que no se pueda acceder en la hora actual
+\item Deshabilita la cuenta
+\item Pon una limitación de acceso, de manera que solo se pueda acceder desde la máquina cliente1
+\end{itemize}
+\end{enumerate}
+
+
+\section{Ejercicio 4}
+\label{sec:org0368d18}
+\begin{enumerate}
+\item Comprobar que en búsqueda directa aparecen vuestros equipos
+\begin{itemize}
+\item ¿Funciona \texttt{nslookup} tanto por nombre como por dirección IP?
+\end{itemize}
+\item Crea la zona de búsqueda inversa
+\item Añadir los punteros \texttt{PTR} de los equipos
+\item Marcar actualizar punteros \texttt{PTR}
+\item Repetir \texttt{nslookup} por dirección IP. ¿Funciona?
+\end{enumerate}
+
+
+\section{Ejercicio 5}
+\label{sec:orgc37d98c}
+\begin{enumerate}
+\item Crear dos \texttt{OU}\footnote{\emph{Organizational unit}}, una madrid y otra sevilla.
+\item Crear dentro de la \texttt{OU} madrid otra \texttt{OU} llamada Electricista
+\item Mover el equipo cliente1 a la \texttt{OU} electricista
+\item Mover el equipo cliente2 a la \texttt{OU} sevilla
+\item Crear un usuario dentro de la \texttt{OU} Electricista llamado electrico
+\item Crear un usuario dentro de la \texttt{OU} sevilla llamado sevillano
+\item Crear una \texttt{OU} llamada equipos reales y meter en esta a los equipos cliente1 y cliente2
+\end{enumerate}
+
+
+\section{Ejercicio 6}
+\label{sec:orgcbfc45a}
+\begin{enumerate}
+\item Publicar los recursos compartidos en cliente1 (\texttt{rw}) dentro de la \texttt{OU} equiposReales
+\item Crear en el controlador de dominio la carpeta carpeta1 en \texttt{C:\textbackslash{}}
+\item Compartir carpeta1 con permisos de lectura a usuarios del dominio
+\item Publicar carpeta1 en la \texttt{OU} equiposReales
+\item Iniciar sesión en cliente2 en el dominio como empleado y busca los recursos compartidos por el dominio
+\item Buscar desde cliente2 los equipos del dominio
+\item Comprueba que entras a carpeta1 con los permisos configurados
+\item Comprobar que entras a los recursos lectura y escritura
+\item Reiniciar sesión en cliente2 como usuario local empleado
+\item ¿Puedes buscar los recursos compartidos del dominio? ¿Por qué?
+\item ¿Puede entrar al recurso lectura de cliente1?
+\end{enumerate}
+
+
+\section{Ejercicio 7}
+\label{sec:orgfc9a264}
+\textbf{Previo al ejercicio, mover los usuarios pedro y empleado a la \texttt{OU} equiposReales}
+\begin{enumerate}
+\item Establecer un fondo de escritorio obligatorio para la \texttt{OU} equiposreales
+\begin{itemize}
+\item Inicia sesión en los distintos clientes y comprueba que se ha establecido el fondo escritorio
+\end{itemize}
+\end{enumerate}
+
+
+\section{Ejercicio 8}
+\label{sec:org7a3f726}
+\begin{enumerate}
+\item Establecer política para instalar Firefox a los miembros de una \texttt{OU} en configuración de usuario
+\begin{itemize}
+\item Comprueba que se puede instalar el \emph{software}
+\end{itemize}
+\end{enumerate}
+
+
+\section{Ejercicio 9}
+\label{sec:orge55a34f}
+\begin{enumerate}
+\item Redireccionar documentos, el objetivo, es que independientemente de donde inicie sesión el usuario, la carpeta Documentos de todos los usuarios de la \texttt{OU} se encuentre en el
+servidor en \texttt{C:\textbackslash{}DocumentosUsuarios}
+\end{enumerate}
+
+
+\section{Ejercicio 10}
+\label{sec:orgfc94f6a}
+\begin{enumerate}
+\item Impedir el acceso de usuarios distintos a los que están en equiposReales que inicien sesión en cliente1 y cliente2
+\end{enumerate}
+
+
+\section{Ejercicio 11}
+\label{sec:org411654c}
+\begin{enumerate}
+\item A partir de que creamos el dominio, los usuarios normales no pueden entrar en equipo controlador de dominio. Esto se realiza por seguridad del propio controlador de dominio.
+Este comportamiento está definido por la política por defecto del dominio.
+\begin{itemize}
+\item \url{https://blog.soporteti.net/como-permitir-el-inicio-de-sesion-local-en-windows-server-2008-como-controlador-de-dominio/}
+\end{itemize}
+\end{enumerate}
+\end{document}

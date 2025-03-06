@@ -1,0 +1,669 @@
+% Created 2025-02-03 Mon 09:43
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage[margin=0.5in]{geometry}
+\hypersetup{colorlinks, linkcolor=black}
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf[L]{Redes de área local}
+\fancyhf[R]{Examen Temas 1-3}
+\fancyfoot[R]{ismael.macareno@educa.madrid.org}
+\fancyfoot[L]{CC BY-NC-SA 4.0}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{220,220,220}
+\newenvironment{shadedcode}{%
+\VerbatimEnvironment
+\begin{mdframed}[backgroundcolor=shadecolor,linewidth=0pt]}%
+{\end{mdframed}}
+\usepackage{attachfile2}
+\newcommand{\textattachfilecolor}[2]{\textattachfile[color=0 0 0.5]{#1}{\textcolor{blue}{#2}}}
+\usepackage[spanish]{babel}
+\usepackage{datetime2}
+\DTMlangsetup[es-ES]{ord=raise}
+\renewcommand{\dateseparator}{/}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\newcommand\blankpage{\null\thispagestyle{empty}\newpage}
+\usepackage{colortbl}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage[spanish]{babel}
+\lstset{
+inputencoding=utf8,
+extendedchars=true,
+literate={ñ}{{\~n}}1 {Ñ}{{\~N}}1 {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1,
+basicstyle=\ttfamily,
+breaklines=true,
+columns=fullflexible,
+keepspaces=true,
+language=TeX,
+morekeywords={*, -, **, /}
+}
+\author{Ismael Macareno Chouikh}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Ismael Macareno Chouikh},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\tableofcontents
+
+¿Cuál de las siguientes opciones describe mejor una arquitectura de red?
+
+\begin{itemize}
+\item Conjunto de dispositivos de almacenamiento
+
+\item Plan que establece mecanismos para la comunicación entre dispositivos
+
+\item Red de área local restringida
+
+\item Sistema de virtualización para servidores
+\end{itemize}
+
+Una arquitectura monolítica en redes:
+
+\begin{itemize}
+\item Era compatible con todas las empresas
+
+\item Dividía las funciones en varias capas
+
+\item Abordaba todos los aspectos al mismo tiempo
+
+\item Se enfocaba solo en redes inalámbricas
+\end{itemize}
+
+El modelo OSI se compone de:
+
+\begin{itemize}
+\item 5 capas
+
+\item 7 capas
+
+\item 4 capas
+
+\item 8 capas
+\end{itemize}
+
+La capa física del modelo OSI se encarga de:
+
+\begin{itemize}
+\item El direccionamiento IP
+
+\item El transporte de datos entre redes
+
+\item La codificación de información a señales utilizables en el canal
+
+\item La gestión de errores
+\end{itemize}
+
+El protocolo TCP es:
+
+\begin{itemize}
+\item No orientado a conexión
+
+\item Orientado a conexión
+
+\item Exclusivo para redes inalámbricas
+
+\item Usado solo para broadcast
+\end{itemize}
+
+La función principal de la capa de enlace es:
+
+\begin{itemize}
+\item Definir el mejor camino para la transmisión de datos
+
+\item Garantizar una comunicación libre de errores entre dispositivos directamente conectados
+
+\item Proporcionar servicios de cifrado
+
+\item Gestionar el direccionamiento IP
+\end{itemize}
+
+¿Cuál es la unidad de datos (PDU) de la capa de red?
+
+\begin{itemize}
+\item Trama
+
+\item Paquete
+
+\item Segmento
+
+\item Bits
+\end{itemize}
+
+El protocolo IP se encarga de:
+
+\begin{itemize}
+\item Gestión de sesiones Cifrado de datos
+
+\item Encaminamiento de paquetes
+
+\item Sincronización de dispositivos
+\end{itemize}
+
+Una red PAN está diseñada para:
+
+\begin{itemize}
+\item Conectar dispositivos a nivel personal
+
+\item Conectar dispositivos a través de ciudades
+
+\item Interconectar continentes Transmitir datos entre varios edificios
+\end{itemize}
+
+En una topología en estrella:
+
+\begin{itemize}
+\item Todos los nodos están conectados en un lazo cerrado
+
+\item Si falla el nodo central, la red cae
+
+\item Los datos circulan sin nodo central
+
+\item No hay colisiones posibles
+\end{itemize}
+
+La transmisión en modo simplex se caracteriza por:
+\begin{itemize}
+\item Comunicación simultánea en ambos sentidos
+
+\item Comunicación en ambos sentidos pero alternada
+
+\item Comunicación en un solo sentido
+
+\item Transmisión mediante señales cifradas
+\end{itemize}
+
+En una red punto a punto:
+
+\begin{itemize}
+\item Todos los nodos comparten el mismo canal
+
+\item Se establece una conexión dedicada entre dos nodos
+
+\item La información se transmite mediante token
+
+\item Los paquetes no requieren direcciones
+\end{itemize}
+
+El encaminamiento consiste en:
+
+\begin{itemize}
+\item Determinar la mejor ruta para transmitir datos
+
+\item Dividir los datos en tramas
+
+\item Gestión de errores en la capa de enlace
+
+\item Configurar el hardware de red
+\end{itemize}
+
+La multiplexación permite:
+
+\begin{itemize}
+\item Reducir errores de transmisión
+
+\item Dividir una red en varias subredes
+
+\item Compartir un canal para múltiples comunicaciones
+
+\item Conectar dispositivos inalámbricos
+\end{itemize}
+
+La función de un switch en una red es:
+
+\begin{itemize}
+\item Repetir señales a todos los puertos
+
+\item Encaminamiento entre redes
+
+\item Conectar nodos y redirigir tramas al destino correcto
+
+\item Manejar conexiones VPN
+\end{itemize}
+
+El protocolo DNS se utiliza para:
+
+\begin{itemize}
+\item Transferencia de archivos
+
+\item Resolución de nombres de dominio
+
+\item Cifrado de datos
+
+\item Gestión de direcciones IP
+\end{itemize}
+
+La ventaja principal de una red privada es:
+
+\begin{itemize}
+\item Bajo coste
+
+\item Alta disponibilidad pública
+
+\item Diseño a medida y control total
+
+\item Bajo mantenimiento
+\end{itemize}
+
+Una red MAN suele abarcar:
+
+\begin{itemize}
+\item Un edificio
+
+\item Una región o conjunto de edificios
+
+\item Varias ciudades
+
+\item Dispositivos personales
+\end{itemize}
+
+El protocolo UDP:
+
+\begin{itemize}
+\item Garantiza la entrega de datos
+
+\item Es orientado a conexión
+
+\item No garantiza la entrega de datos
+
+\item Siempre cifra la información
+\end{itemize}
+
+La capa de presentación del modelo OSI se encarga de:
+
+\begin{itemize}
+\item Encaminamiento de paquetes
+
+\item Compresión y cifrado de información
+
+\item Establecer la conexión física
+
+\item Gestionar el acceso al medio
+\end{itemize}
+
+Un ejemplo de protocolo en la capa de aplicación es:
+
+\begin{itemize}
+\item IP
+
+\item FTP
+
+\item TCP
+
+\item Ethernet
+\end{itemize}
+
+El modelo TCP/IP tiene:
+
+\begin{itemize}
+\item Tres capas
+
+\item Cuatro capas
+
+\item Cinco capas
+
+\item Siete capas
+\end{itemize}
+
+La capa de transporte en TCP/IP se encarga de:
+
+\begin{itemize}
+\item Direccionamiento lógico
+
+\item Encaminamiento
+
+\item Gestión de la conexión extremo a extremo
+
+\item Gestión de direcciones físicas
+\end{itemize}
+
+En una topología de bus:
+
+\begin{itemize}
+\item Los nodos se conectan mediante un nodo central
+
+\item Los nodos se conectan en serie formando un anillo
+
+\item Los nodos comparten un único cable
+
+\item La información siempre viaja en paralelo
+\end{itemize}
+
+La función principal de un router es:
+
+\begin{itemize}
+\item Repetir señales
+
+\item Encaminamiento de paquetes entre redes
+
+\item Almacenar datos temporalmente
+
+\item Gestionar el acceso al medio
+\end{itemize}
+
+En una conexión half-duplex:
+
+\begin{itemize}
+\item La comunicación es en un solo sentido
+
+\item La comunicación es simultánea en ambos sentidos
+
+\item La comunicación es alternada entre ambos nodos
+
+\item Solo se transmiten datos cifrados
+\end{itemize}
+
+El control de flujo se refiere a:
+
+\begin{itemize}
+\item La gestión del direccionamiento IP
+
+\item La regulación de la velocidad de transmisión entre emisor y receptor
+
+\item La división de paquetes grandes
+
+\item La selección del mejor camino
+\end{itemize}
+
+El sistema DSL permite:
+
+\begin{itemize}
+\item Comunicaciones por radiofrecuencia
+
+\item Alta velocidad en cableado de baja calidad
+
+\item Transmisión de datos solo en redes privadas
+
+\item Uso exclusivo para voz
+\end{itemize}
+
+Una VPN ofrece:
+
+\begin{itemize}
+\item Comunicaciones públicas sin seguridad
+
+\item Ilusión de una LAN única mediante redes públicas
+
+\item Solo conexiones locales
+
+\item Comunicación inalámbrica
+\end{itemize}
+
+La multiplexación por división de tiempo:
+
+\begin{itemize}
+\item Divide el canal en bandas de frecuencia
+
+\item Divide el tiempo en ranuras asignadas a cada usuario
+
+\item No permite transmisiones simultáneas
+
+\item Solo se usa en redes inalámbricas
+\end{itemize}
+
+La PDU de la capa física es:
+
+\begin{itemize}
+\item Bits
+
+\item Trama
+
+\item Paquete
+
+\item Segmento
+\end{itemize}
+
+Una red RDSI permite:
+
+\begin{itemize}
+\item Solo transmisión de voz
+
+\item Voz y datos multiplexados
+
+\item Solo conexiones inalámbricas
+
+\item Comunicaciones exclusivas para voz analógica
+\end{itemize}
+
+La codificación Manchester diferencia un bit 0 y 1 mediante:
+
+\begin{itemize}
+\item Cambio de fase al principio del bit
+
+\item Transición a mitad del bit
+
+\item Ausencia de transiciones
+
+\item Mantenimiento de la polaridad
+\end{itemize}
+
+La multiplexación por división de frecuencia asigna:
+
+\begin{itemize}
+\item Ranuras de tiempo
+
+\item Bandas de frecuencia
+
+\item Direcciones IP
+
+\item Paquetes segmentados
+\end{itemize}
+
+Un bridge conecta:
+
+\begin{itemize}
+\item Dos segmentos de red
+
+\item Dispositivos inalámbricos
+
+\item Servidores web
+
+\item Redes internacionales
+\end{itemize}
+
+El ruido en una transmisión es:
+
+\begin{itemize}
+\item Una deformación predecible
+
+\item Interferencia aleatoria y no deseada
+
+\item Pérdida de paquetes
+
+\item Cambio de fase controlado
+\end{itemize}
+
+El protocolo FTP se utiliza para:
+
+\begin{itemize}
+\item Transferencia de archivos
+
+\item Resolución de nombres
+
+\item Gestión de sesiones
+
+\item Control de accesos
+\end{itemize}
+
+La transmisión asíncrona requiere:
+
+\begin{itemize}
+\item Una velocidad constante
+
+\item Señales de sincronización incluidas en el mensaje
+
+\item Relojes sincronizados
+
+\item Cifrado extremo a extremo
+\end{itemize}
+
+Una topología en árbol es una extensión de:
+
+\begin{itemize}
+\item Bus
+
+\item Estrella
+
+\item Anillo
+
+\item Jerárquica
+\end{itemize}
+
+Un concentrador (hub) en una red:
+
+\begin{itemize}
+\item Redirige paquetes al destino correcto
+
+\item Repite señales a todos los puertos
+
+\item Filtra tramas por dirección
+
+\item Encapsula datos
+\end{itemize}
+
+La dirección IP pertenece a la capa:
+
+\begin{itemize}
+\item Física
+
+\item Enlace
+
+\item Red
+
+\item Transporte
+\end{itemize}
+
+La transmisión de voz por corriente eléctrica se realiza en:
+
+\begin{itemize}
+\item RTC
+
+\item VPN
+
+\item DSL
+
+\item ISDN
+\end{itemize}
+
+La transformada de Fourier permite:
+
+\begin{itemize}
+\item Reducir el ruido de transmisión
+
+\item Identificar las frecuencias componentes de una señal
+
+\item Mejorar el ancho de banda
+
+\item Optimizar las conexiones
+\end{itemize}
+
+El control de acceso al medio (MA- se encuentra en:
+
+\begin{itemize}
+\item Capa física
+
+\item Subcapa de enlace
+
+\item Capa de transporte
+
+\item Capa de aplicación
+\end{itemize}
+
+La atenuación en una transmisión provoca:
+
+\begin{itemize}
+\item Deformación de la señal
+
+\item Pérdida de intensidad de la señal
+
+\item Interferencia con otras señales
+
+\item Mejora en la calidad
+\end{itemize}
+
+La transmisión paralela:
+
+\begin{itemize}
+\item Envía un bit por vez
+
+\item Envía varios bits simultáneamente
+
+\item Requiere modems especiales
+
+\item Solo se usa en redes inalámbricas
+\end{itemize}
+
+El protocolo Telnet permite:
+
+\begin{itemize}
+\item Resolución de nombres
+
+\item Transferencia de archivos
+
+\item Conexión remota
+
+\item Control de acceso
+\end{itemize}
+
+Una red WAN abarca:
+
+\begin{itemize}
+\item Un área local
+
+\item Una región pequeña
+
+\item Varias ciudades o países
+
+\item Solo dispositivos personales
+\end{itemize}
+
+El direccionamiento MAC es:
+
+\begin{itemize}
+\item Dirección lógica
+
+\item Dirección física
+
+\item Dirección virtual
+
+\item Dirección de transporte
+\end{itemize}
+
+La capa LLC pertenece a:
+
+\begin{itemize}
+\item Capa física
+
+\item Subcapa de enlace
+
+\item Capa de red
+
+\item Capa de transporte
+\end{itemize}
+\end{document}

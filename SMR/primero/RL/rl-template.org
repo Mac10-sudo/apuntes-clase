@@ -16,8 +16,8 @@
 #+LaTeX_HEADER: \usepackage{fancyhdr}
 #+LaTeX_HEADER: \pagestyle{fancy}
 #+LaTeX_HEADER: \fancyhf[L]{Redes de área local}
-#+LaTeX_HEADER: \fancyhf[R]{Tema 03}
-#+LaTeX_HEADER: \fancyfoot[R]{ismael.macareno@educa.madrid.org}
+#+LaTeX_HEADER: \fancyhf[R]{Tema 04 - Cableado estructurado}
+#+LaTeX_HEADER: \fancyfoot[R]{ismaelmacarenochouikh1@gmail.com}
 #+LaTeX_HEADER: \fancyfoot[L]{CC BY-NC-SA 4.0}
 #+LATEX_HEADER: \usepackage{parskip}
 

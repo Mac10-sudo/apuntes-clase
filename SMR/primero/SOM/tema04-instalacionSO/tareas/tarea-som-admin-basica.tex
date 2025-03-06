@@ -1,0 +1,121 @@
+% Created 2025-03-06 Thu 17:30
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage[margin=0.5in]{geometry}
+\hypersetup{colorlinks, linkcolor=black}
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf[L]{SOM}
+\fancyhf[R]{Administración básica de Windows 10}
+\fancyfoot[R]{ismaelmacarenochouikh1@gmail.com}
+\fancyfoot[L]{CC BY-NC-SA 4.0}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{220,220,220}
+\newenvironment{shadedcode}{%
+\VerbatimEnvironment
+\begin{mdframed}[backgroundcolor=shadecolor,linewidth=0pt]}%
+{\end{mdframed}}
+\usepackage{attachfile2}
+\newcommand{\textattachfilecolor}[2]{\textattachfile[color=0 0 0.5]{#1}{\textcolor{blue}{#2}}}
+\usepackage[spanish]{babel}
+\usepackage{datetime2}
+\DTMlangsetup[es-ES]{ord=raise}
+\renewcommand{\dateseparator}{/}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\newcommand\blankpage{\null\thispagestyle{empty}\newpage}
+\usepackage{colortbl}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage[spanish]{babel}
+\lstset{
+inputencoding=utf8,
+extendedchars=true,
+literate={ñ}{{\~n}}1 {Ñ}{{\~N}}1 {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1,
+basicstyle=\ttfamily,
+breaklines=true,
+columns=fullflexible,
+keepspaces=true,
+language=TeX,
+morekeywords={*, -, **, /}
+}
+\author{Ismael Macareno Chouikh}
+\date{\today}
+\title{Práctica sobre Admin. básica de \emph{Windows} 10 (Parte I)}
+\hypersetup{
+ pdfauthor={Ismael Macareno Chouikh},
+ pdftitle={Práctica sobre Admin. básica de \emph{Windows} 10 (Parte I)},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\blankpage
+
+\section{Caso práctico I - inicio de sistema}
+\label{sec:org2467d50}
+\begin{enumerate}
+\item Accede a la máquina virtual en la que instalaste Windows 10. Captura la forma en la que te pide que inicies sesión
+\end{enumerate}
+
+\section{Caso práctico II - configuraciones iniciales}
+\label{sec:org28e8999}
+\begin{enumerate}
+\item Accede al nombre del equipo y cámbialo para que se llame:
+\begin{itemize}
+\item W10-XX, siendo XX el número de puesto de tu equipo
+\end{itemize}
+\item Accede al panel de control, Sistema, Administrador de dispositivos, ¿están instalados todos los controladores del equipo? ¿Cómo lo sabes?
+\item Selecciona las propiedades de un dispositivo y comprueba su configuración de controlador
+\item Indica varias formas de acceder a la configuración de la tarjeta de red del equipo
+\item Comprueba la configuración por defecto de la red y de la tarjeta de red del equipo.
+\begin{itemize}
+\item La red debe ser de Trabajo o Privada, la configuración de tarjeta de red por DHCP, si no es así, cámbialo
+\end{itemize}
+\item Accede a Windows \emph{Update}
+\begin{itemize}
+\item Comprueba la configuración
+\item ¿Qué opciones hay?
+\end{itemize}
+\item ¿Se ha instalado algún antivirus por defecto?
+\end{enumerate}
+
+\section{Caso práctico III - atajos y características gráficas}
+\label{sec:org07acbcd}
+\begin{enumerate}
+\item Prueba y explica lo que hacen los siguientes atajos:
+\begin{itemize}
+\item \texttt{Win+E}
+\item \texttt{Win+F}
+\item \texttt{Win+D}
+\item \texttt{Win+L}
+\item \texttt{Win+R}
+\item \texttt{Win+TAB}
+\item \texttt{Win+Flechas}
+\end{itemize}
+\item ¿Conoces y utilizas alguno más? ¿Cuál?
+\end{enumerate}
+\end{document}

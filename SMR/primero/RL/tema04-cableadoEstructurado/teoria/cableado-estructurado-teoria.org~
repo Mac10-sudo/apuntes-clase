@@ -1,0 +1,28 @@
+#+INCLUDE: ../../rl-template.org
+#+TITLE: Tema 04 - Cableado Estructurado
+#+STARTUP: overview
+
+\blankpage
+
+* Definiciones de cableado estructurado
+** Definición I
+El *cableado estructurado* es la técnica que permite
+- cambiar
+- identificar
+- mover
+periféricos o equipos de una red con flexibilidad y sencillez.
+** Definición II
+Sistema colectivo de:
+- cables
+- canalizaciones
+- conectores
+- etiquetas
+- espacios
+y demás dispositivos que deben ser instalados para establecer una infraestructura de telecomunicaciones genérica en un edificio o campus
+** Definición III
+Distribución de cables en un edificio que comprenda las necesidades de comunicación actuales y futuras.
+
+* Características
+- Toda solución de cableado estructurado debe ser modular.
+- Comprende la transmisión de voz y datos
+- 
