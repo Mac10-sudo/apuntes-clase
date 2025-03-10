@@ -1,0 +1,16 @@
+#+INCLUDE: ../../../rl-template.org
+#+TITLE: Práctica 1 - Presupuesto cableado estructurado de una biblioteca
+#+STARTUP: overview
+
+\blankpage
+
+* Características para el presupuesto
+Un posible cliente pide un presupuesto para realizar la instalación de una LAN en una biblioteca.
+- El edificio tiene 50m2 de fachada y 60m2
+- El cableado vertical se aloja en el vano junto al ascensor, al lado de la fotocopiadora
+- No se dispone de suelo ni techo técnico
+- Se desea que la fotocopiadora disponga de punto de red. Debe haber puntos de red en los tres despachos de biblioteca
+- La sala de lectura necesito acceso wifi. Debe haber una antena a menos de 20m de cualquier portátil de la sala
+- En la sala de lectura se instalarán 4 puntos de acceso en cada una de las columnas
+
+

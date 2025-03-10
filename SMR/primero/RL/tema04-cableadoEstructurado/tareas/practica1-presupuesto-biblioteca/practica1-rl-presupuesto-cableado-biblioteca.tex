@@ -1,0 +1,120 @@
+% Created 2025-03-10 Mon 16:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage[margin=0.5in]{geometry}
+\hypersetup{colorlinks, linkcolor=black}
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf[L]{Redes de área local}
+\fancyhf[R]{Tema 04 - Cableado estructurado}
+\fancyfoot[R]{ismaelmacarenochouikh1@gmail.com}
+\fancyfoot[L]{CC BY-NC-SA 4.0}
+\usepackage{parskip}
+\usepackage{mdframed}
+\usepackage{fancyvrb}
+\usepackage{xcolor}
+\definecolor{shadecolor}{RGB}{220,220,220}
+\newenvironment{shadedcode}{%
+\VerbatimEnvironment
+\begin{mdframed}[backgroundcolor=shadecolor,linewidth=0pt]}%
+{\end{mdframed}}
+\usepackage{attachfile2}
+\newcommand{\textattachfilecolor}[2]{\textattachfile[color=0 0 0.5]{#1}{\textcolor{blue}{#2}}}
+\usepackage[spanish]{babel}
+\usepackage{datetime2}
+\DTMlangsetup[es-ES]{ord=raise}
+\renewcommand{\dateseparator}{/}
+\usepackage{titlesec}
+\usepackage{afterpage}
+\newcommand\blankpage{\null\thispagestyle{empty}\newpage}
+\usepackage{colortbl}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage[spanish]{babel}
+\lstset{
+inputencoding=utf8,
+extendedchars=true,
+literate={ñ}{{\~n}}1 {Ñ}{{\~N}}1 {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1,
+basicstyle=\ttfamily,
+breaklines=true,
+columns=fullflexible,
+keepspaces=true,
+language=TeX,
+morekeywords={*, -, **, /}
+}
+\author{Ismael Macareno Chouikh}
+\date{\today}
+\title{Práctica 1 - Presupuesto cableado estructurado de una biblioteca}
+\hypersetup{
+ pdfauthor={Ismael Macareno Chouikh},
+ pdftitle={Práctica 1 - Presupuesto cableado estructurado de una biblioteca},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
+ pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\blankpage
+
+\section{Características para el presupuesto}
+\label{sec:orgb533495}
+Un posible cliente pide un presupuesto para realizar la instalación de una LAN en una biblioteca.
+\begin{itemize}
+\item El edificio tiene 50m2 de fachada y 60m2
+\item El cableado vertical se aloja en el vano junto al ascensor, al lado de la fotocopiadora
+\item No se dispone de suelo ni techo técnico
+\item Se desea que la fotocopiadora disponga de punto de red. Debe haber puntos de red en los tres despachos de biblioteca
+\item La sala de lectura necesito acceso wifi. Debe haber una antena a menos de 20m de cualquier portátil de la sala
+\item En la sala de lectura se instalarán 4 puntos de acceso en cada una de las columnas
+\end{itemize}
+
+
+\section{Instrucciones para realizar la práctica}
+\label{sec:org3fe9c4f}
+Se deberá entregar un documento PDF bien formado con la siguiente información:
+\begin{itemize}
+\item Plano dibujado indicando mediante una leyenda que significa cada cosa
+\item Una explicación bien detallada sobre cada punto del plano
+\item Medidas y razonamiento de cantidades en el presupuesto
+\item Presupuesto detallado:
+\begin{itemize}
+\item Objetos adquiridos con sus respectivos enlaces a las páginas web donde se han visualizado
+\item Unidades
+\item Precio unitario
+\item Total
+\end{itemize}
+\end{itemize}
+
+
+\section{Instrucciones de entrega de la práctica}
+\label{sec:org52ad082}
+La práctica se deberá entregar en tiempo y formato.
+
+El formato será:
+\begin{itemize}
+\item Encabezado y pie de página
+\item Numeración de las páginas
+\item Portada, índice y bibliografía
+\end{itemize}
+
+Se apreciará también que el presupuesto este realizado mediante \emph{Microsoft} excel.
+\end{document}

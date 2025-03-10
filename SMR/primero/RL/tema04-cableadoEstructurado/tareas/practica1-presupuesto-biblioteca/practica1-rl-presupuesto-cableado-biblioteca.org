@@ -1,0 +1,37 @@
+#+INCLUDE: ../../../rl-template.org
+#+TITLE: Práctica 1 - Presupuesto cableado estructurado de una biblioteca
+#+STARTUP: overview
+
+\blankpage
+
+* Características para el presupuesto
+Un posible cliente pide un presupuesto para realizar la instalación de una LAN en una biblioteca.
+- El edificio tiene 50m2 de fachada y 60m2
+- El cableado vertical se aloja en el vano junto al ascensor, al lado de la fotocopiadora
+- No se dispone de suelo ni techo técnico
+- Se desea que la fotocopiadora disponga de punto de red. Debe haber puntos de red en los tres despachos de biblioteca
+- La sala de lectura necesito acceso wifi. Debe haber una antena a menos de 20m de cualquier portátil de la sala
+- En la sala de lectura se instalarán 4 puntos de acceso en cada una de las columnas
+
+
+* Instrucciones para realizar la práctica
+Se deberá entregar un documento PDF bien formado con la siguiente información:
+- Plano dibujado indicando mediante una leyenda que significa cada cosa
+- Una explicación bien detallada sobre cada punto del plano
+- Medidas y razonamiento de cantidades en el presupuesto
+- Presupuesto detallado:
+  - Objetos adquiridos con sus respectivos enlaces a las páginas web donde se han visualizado
+  - Unidades
+  - Precio unitario
+  - Total
+
+
+* Instrucciones de entrega de la práctica
+La práctica se deberá entregar en tiempo y formato.
+
+El formato será:
+- Encabezado y pie de página
+- Numeración de las páginas
+- Portada, índice y bibliografía
+
+Se apreciará también que el presupuesto este realizado mediante /Microsoft/ excel.
